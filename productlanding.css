@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* * is all element(all css selector) this type of code is use to reset margin and padding in browser */
+    box-sizing: border-box;
+}
+body {
+    background-color: #eee;
+    font-family: 'Open Sans', sans-serif;
+  }
+#page{
+    position: relative;
+}
+li{
+    list-style: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+  }
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+.button{
+    padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px blue solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  color: blue;
+}
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+  }
+  /* @media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  } */
+  .logo {
+    width: 60vw;
+  }
+  /* @media (max-width: 650px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  } */
+  /* this media query is for phone navbar will be on the left */
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    margin-top: 150px;
+  }
+  #hero input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+  }
